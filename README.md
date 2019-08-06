@@ -27,6 +27,13 @@ Rodar em sequência:
 ```
 
 Após, startar o projeto o backend já está rodando em dois dockers. O Backend utiliza MongoDB (validator_mongodb) e Apache2, PHP 7.2 (validator_backend). Lumen está configurado com Doctrine ODM.
+Para instalar as dependencias do backend:
+
+```
+docker exec -it validator_backend bash
+cd api
+composer install 
+```
 
 ## Frontend 
 Instalar o Node.js e Npm no host.
